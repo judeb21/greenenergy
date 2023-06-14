@@ -1,0 +1,48 @@
+ .installation { 
+  &--request {
+    position: relative;
+    &__head {
+      & h2 {
+        color: $secondary-400;
+        letter-spacing: 0.2px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 125%;
+      }
+    }
+
+    &__tabs {
+      display: flex;
+      column-gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__tab {
+      background: #FAFAFA;
+      border: 1px solid $secondary-200;
+      border-radius: 70px;
+      padding: 9px 16px 9px 16px;
+      text-align: center;
+      margin-bottom: 30px;
+
+      & span {
+        color: $secondary-400;
+        font-size: 13px;
+        line-height: 150%;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        text-transform: capitalize;
+      }
+    }
+
+    &__active {
+      background: $primary-blue;
+
+      & span {
+        color: $primary-white;
+      }
+    }
+  }
+ }

@@ -1,0 +1,50 @@
+.modal {
+  &--mask {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    transition: opacity .5 ease-in;
+    will-change: transition;
+    transform: translateZ(0);
+    background: rgba(26, 32, 44, 0.6);
+  }
+
+  &--wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &--container {
+    position: absolute;
+    bottom: 15px;
+    right: 22px;
+    border-radius: 16px;
+
+    @include responsive(smartphone-landscape) {
+      max-width: 90%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 15px;
+      background: $primary-white;
+      border-radius: 16px;
+      transition: all .3s ease-in;
+      will-change: transition;
+      transform: translateZ(0);
+    }
+  }
+
+  &--body {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+.modal-enter-from, .modal-leave-to {
+  opacity: 0;
+  will-change: opacity;
+  transform: translateZ(0);
+}

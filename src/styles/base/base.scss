@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-height: 100vh;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='checkbox'],
+.form-control {
+  font-size: 14px;
+  &::-webkit-input-placeholder {
+      font-size: 14px;
+  }
+  &::-moz-placeholder {
+      font-size: 14px;
+  }
+  &:-ms-input-placeholder {
+      /* IE 10+ */
+      font-size: 14px;
+  }
+  &:-moz-placeholder {
+      /* Firefox 18- */
+      font-size: 14px;
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+      box-shadow: 0 0 0 30px white inset !important;
+  }
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.primary-blue {
+  color: $primary-blue;
+}
+
+.success {
+  color: $success-dark;
+}
+
+.fail {
+  color: #FF4747;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+}
+
+#app {
+  height: 100%;
+}

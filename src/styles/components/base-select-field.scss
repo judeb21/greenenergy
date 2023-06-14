@@ -1,0 +1,41 @@
+.base--select {
+  &__select-container {
+    position: relative;
+    margin-top: 18px;
+  }
+  &__select-input {
+    height: 56px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 8px 50px 8px 16px;
+    line-height: 150%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: $primary-white url("@/assets/img/icons/select-close-icon.svg")
+      no-repeat 96% 50%;
+    font-family: $primary-font;
+
+    &:focus {
+      outline: #e2e8f0 !important;
+      border: 1px solid #e2e8f0;
+    }
+
+    &:disabled {
+      opacity: 1;
+      // background: $off-white;
+      // color: $light-grey4;
+    }
+
+    &::placeholder {
+      color: $secondary-300;
+    }
+
+    & option {
+      &:disabled {
+        // color: $light-grey4;
+      }
+    }
+  }
+}

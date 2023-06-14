@@ -1,0 +1,48 @@
+.signup {
+  position: relative;
+  height: 100%;
+  background: #F2F6FF;
+
+  &--illustration {
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &--intro {
+    position: relative;
+    padding: 80px 25px;
+
+    & .app-secondary-btn {
+      margin-top: 16px;
+    }
+
+    &__context {
+
+      & h2 {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 105%;
+        letter-spacing: 0.2px;
+        color: #1A202C;
+        margin-bottom: 18px;
+      }
+
+      & p {
+        color: #5D6A83;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 18px;
+      }
+    }
+  }
+}
+
+.has-required {
+  text-decoration: line-through;
+  color:#689868;
+}

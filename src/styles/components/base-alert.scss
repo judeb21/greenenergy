@@ -1,0 +1,53 @@
+.base {
+  &--alert {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    column-gap: 16px;
+    border-radius: 14.1725px;
+    position: fixed;
+    top: 35px;
+    z-index: 99;
+    left: 20px;
+    width: 90%;
+    align-items: center;
+
+    &__error {
+      background: #DD3333;
+    }
+
+    &__success {
+      background: #16A34A;
+    }
+
+    &__description {
+      & h4 {
+        font-weight: 600;
+        font-size: 12.4px;
+        line-height: 150%;
+        color: $primary-white;
+        letter-spacing: 0.27px;
+
+        & span {
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.27px;
+          font-weight: 400;
+          color: #edf2f7;
+        }
+      }
+    }
+
+    &__img {
+      height: 28.34px;
+      width: 50px;
+    }
+
+    &__close {
+      width: 50px;
+      height: 21.26px;
+      margin-top: -12px;
+      cursor: pointer;
+    }
+  }
+}

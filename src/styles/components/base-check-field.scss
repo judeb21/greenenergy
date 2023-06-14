@@ -1,0 +1,130 @@
+.base-input-field-container {
+  margin-top: 18px;
+}
+
+.textfield-input-container {
+  position: relative;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.textfield-input {
+  border: 1px solid $greyscale-300;
+  border-radius: 12px;
+  height: 56px;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $primary-font;
+  font-weight: 400;
+  color: $secondary-300;
+  margin-bottom: 10px;
+
+  &:focus {
+    outline: none;
+    border: 0.83px solid #194BFB;
+  }
+  &:active {
+    outline: none;
+    border: 0.83px solid #194BFB;
+  }
+  &::placeholder {
+    color: $secondary-300;
+  }
+  &.error {
+    border: 1px solid $error;
+    color: $error;
+  }
+}
+
+.textfield-label {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $secondary-400;
+  display: block;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+label {
+  width: 100%;
+}
+
+.base-input-text-area {
+  padding: 8px 8px 8px 16px;
+  // border: 1px solid $light-grey3;
+  border-radius: 12px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    // color: $light-grey4;
+  }
+}
+
+.checkbox-effect:not(:checked),
+.checkbox-effect:checked{
+  position: absolute;
+  left: -9999px;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.textfield-input--checkbox:not(:checked) + label:before,
+.textfield-input--checkbox:checked + label:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $secondary-300;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transform-origin: center center;
+  @include transition-mix;
+  margin: 7px 0;
+}
+
+.textfield-input--checkbox:not(:checked) + label:after,
+.textfield-input--checkbox:checked + label:after {
+  content: url("@/assets/img/icons/checked-icon.svg");
+  display: flex;
+  height: 100%;
+  align-items:center;
+  @include position-absolute($left: 4px, $top: 2px);
+  color: $primary-white;
+}
+
+.textfield-input--checkbox:not(:checked) + label:after {
+  opacity: 1;
+  will-change: opacity;
+}
+
+.textfield-input--checkbox:checked + label:before {
+  transform: scale(1);
+  background-color: $primary-blue;
+  border-color: $primary-blue;
+  @include transition-mix($timing: cubic-bezier(0.57, 1.9, 0, 1.52));
+  will-change: transform;
+}
+
+.textfield-input--checkbox:checked + label:after {
+  opacity: 1;
+  @include transition-mix($delay: 0.2s);
+  will-change: opacity;
+}

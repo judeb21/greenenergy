@@ -1,0 +1,331 @@
+.payment {
+  &--container {
+    margin-top: -20px;
+
+    & h4 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 125%;
+      letter-spacing: 0.2px;
+      color: $secondary-base;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0.3px;
+      width: 90%;
+      color: $secondary-400;
+      margin-top: 14px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--graph {
+    display: flex;
+    background: $primary-white;
+    border: 1px solid $secondary-200;
+    border-radius: 12px;
+    padding: 20px;
+    column-gap: 20px;
+    margin: 20px 0;
+
+    &__content {
+      max-width: 50%;
+      width: 100%;
+    }
+
+    &__data {
+      position: relative;
+      margin-bottom: 15px;
+
+      &-label {
+        position: relative;
+        color: $secondary-400;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      &-percent {
+        color: $secondary-400;
+      }
+    }
+
+    & p {
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 150%;
+      color: $primary-blue;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &--repayment {
+    background: #edf2f7;
+    border: 1px solid $secondary-200;
+    border-radius: 12px;
+    padding: 16px 10px 12px;
+  }
+
+  &--breakdown {
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__content {
+      max-width: 50%;
+      width: 100%;
+
+      & span {
+        color: $secondary-400;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.3px;
+      }
+
+      & p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+        color: $primary-blue;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &--expected {
+    background: $secondary-200;
+    border-radius: 8px;
+    padding: 7px 10px;
+    display: flex;
+    column-gap: 20px;
+
+    & div {
+      max-width: 50%;
+      width: 100%;
+      color: $secondary-400;
+      letter-spacing: 0.3px;
+      line-height: 150%;
+      font-size: 12px;
+      font-weight: 600;
+
+      & span {
+        color: $primary-blue;
+      }
+    }
+
+    & p {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: $primary-blue;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  &--hardwares {
+    margin: 30px 0;
+  }
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+
+    & h4 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+    }
+
+    & p {
+      text-align: right;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+    }
+  }
+
+  &--hardware {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+
+    &__img {
+      height: 102px;
+      width: 118px;
+    }
+
+    &__content {
+      & p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+        color: $secondary-400;
+      }
+    }
+  }
+
+  &--button {
+    padding: 20px 0;
+  }
+
+  &--image {
+    height: 43px;
+    width: 43px;
+
+    &__container {
+      display: flex;
+      background: $primary-white;
+      border: 0.658031px solid #e2e8f0;
+      border-radius: 7.89637px;
+      padding: 15px 13px;
+      column-gap: 25px;
+      align-items: center;
+      margin-bottom: 15px;
+
+      & p {
+        font-size: 10.5285px;
+        line-height: 125%;
+        font-weight: 700;
+        color: $secondary-400;
+        letter-spacing: 0.131606px;
+      }
+
+      & span {
+        font-weight: 400;
+        font-size: 9.21244px;
+        line-height: 150%;
+        letter-spacing: 0.197409px;
+        color: $secondary-400;
+      }
+    }
+
+    &__button {
+      width: 35%;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+
+      p {
+        width: 73px;
+        height: 30px;
+        background: $primary-white;
+        border: 0.658031px solid #e2e8f0;
+        border-radius: 7.89637px;
+        padding: 8px;
+        text-align: center;
+        color: $primary-blue;
+        font-size: 11px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &--terms {
+    padding: 30px 20px;
+    padding-bottom: 120px;
+
+    &__conditions {
+      margin-bottom: 20px;
+
+      & h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+      }
+
+      & p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+        color: $secondary-base;
+      }
+    }
+
+    &__button {
+      display: flex;
+      column-gap: 15px;
+      position: fixed;
+      bottom: 30px;
+      width: 90%;
+      background: $secondary-100;
+      z-index: 1;
+
+      & .app-secondary-btn,
+      & .app-primary-btn {
+        min-width: 47%;
+      }
+    }
+  }
+}
+
+.contribution {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: $alert-warning-base;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -10px;
+    top: 3px;
+  }
+}
+
+.asset {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -10px;
+    top: 3px;
+    background: #38bdf8;
+  }
+}
+
+.quote--building {
+  min-height: 100px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 20px 16px;
+}
+
+.file-input {
+  visibility: hidden;
+  display: none;
+}
+
+.decline {
+  background: rgba(255, 113, 113, 0.1);
+  border-radius: 12px;
+  color: $error;
+}
+
+.get--quote-modal--cancel {
+  text-align: center;
+  color: $primary-blue;
+}

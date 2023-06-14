@@ -1,0 +1,237 @@
+.quote {
+  margin-top: 10px;
+  padding: 16px;
+  width: 100%;
+  background: $primary-white;
+  border: 1px solid $greyscale-300;
+  border-radius: 16px;
+
+  &--container {
+    margin-top: -30px;
+  }
+
+  &__detailss {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    color: #5D6A83;
+    flex-wrap: wrap;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &-text {
+      color: $secondary-base;
+      letter-spacing: 0.3px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+
+  &__process {
+    border-radius: 6px;
+    padding: 6px 10px 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    color: #1a202c;
+  }
+
+  &__details {
+    position: relative;
+    margin-top: 15px;
+  }
+
+  &__detail {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    color: $secondary-400;
+
+    & img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  &__det {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: $secondary-400;
+    letter-spacing: 0.3px;
+    position: relative;
+    margin-bottom: 2px;
+
+    // &:first-child {
+    //   content: "";
+    //   height: 0;
+    //   width: 0;
+    // }
+
+    &:not(:first-child) {
+      &::before {
+        background: $alert-warning-base;
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        top: 30%;
+        left: -10px;
+      }
+    }
+  }
+
+  &__button-container {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 12px;
+
+    & .app-secondary-btn,
+    & .app-primary-btn {
+      min-width: 47%;
+    }
+  }
+
+  &__header {
+    border-bottom: 1px solid $secondary-200;
+    padding-bottom: 10px;
+
+    & h4 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: 0.2px;
+      color: $secondary-base;
+    }
+
+    & span {
+      padding: 6px 10px;
+      color: #1A202C;
+      letter-spacing: 0.3px;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 150%;
+      border-radius: 6px;
+      padding: 6px 10px 4px;
+      text-transform: uppercase;
+    }
+  }
+
+  &--button {
+    margin-top: 20px;
+  }
+
+  &--summary {
+    margin-top: 35px;
+
+    &__heading {
+      color: $secondary-base;
+      letter-spacing: 0.2px;
+      line-height: 125%;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &__context {
+      background: #FAFAFA;
+      border: 0.646258px solid $greyscale-300;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 10px;
+      padding-top: 0;
+
+      & .app--accordion__head {
+        background: #FAFAFA;
+      }
+
+      & .quote--accordion__header {
+        color: $secondary-base;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      & .quote--accordion__body {
+
+        &-cont {
+          margin-top: 16px;
+        }
+      }
+
+      &-contain {
+        padding: 17px 20px;
+        position: relative;
+      }
+
+      &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+      &-title {
+        letter-spacing: 0.3px;
+        color: $secondary-400;
+        line-height: 150%;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      &-img {
+        height: 24px;
+        width: 24px;
+      }
+      &-type {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+      }
+      &-amount {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: right;
+        letter-spacing: 0.3px;
+      }
+      &-date {
+        font-weight: 500;
+        font-size: 14px;
+        color: $secondary-400;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+      }
+      &-description {
+        font-weight: 500;
+        font-size: 14px;
+        color: $secondary-400;
+        line-height: 150%;
+        letter-spacing: 0.3px;
+      }
+    }
+  }
+}
+
+.proces {
+  background: rgba(253, 224, 71, 0.2);
+}

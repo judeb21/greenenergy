@@ -1,0 +1,58 @@
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  margin: 0;
+  font: inherit;
+  // color: #B8BABF;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $secondary-300;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: background;
+  transition: transform 0.12s ease-in-out, border 0.12s ease-in-out;
+  position: relative;
+  margin: 7px 0;
+
+  &::before {
+    content: url("@/assets/img/icons/checked-icon.svg");
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transform: scale(0);
+    border: none;
+    will-change: transform, border;
+    transition: transform 0.12s ease-in-out, border 0.12s ease-in-out;
+  }
+
+  &:checked {
+    background: $primary-blue;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      content: url("@/assets/img/icons/checked-icon.svg");
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      transform: scale(1);
+      top: 8%;
+    }
+  }
+}
+
+label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #252525;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  width: inherit;
+}

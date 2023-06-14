@@ -1,0 +1,49 @@
+.get--quote {
+  &__header {
+    color: $secondary-base;
+    line-height: 125%;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  &__subheader {
+    color: $secondary-400;
+    letter-spacing: 0.3px;
+    line-height: 150%;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__frame {
+    margin-top: 35px;
+  }
+
+  &-modal--header {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: $secondary-base;
+  }
+
+  &-modal--subheader {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: $secondary-400;
+    margin-top: 10px;
+  }
+
+  &-modal--cancel {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: $primary-blue;
+    letter-spacing: 0.2px;
+  }
+}

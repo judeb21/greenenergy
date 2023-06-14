@@ -1,0 +1,271 @@
+.profile {
+  &--setting {
+    &__details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__profile {
+      width: 120px;
+      height: 120px;
+      border: 1px solid #e8edff;
+      border-radius: 16px;
+    }
+
+    &__identity {
+      margin-top: 20px;
+
+      & h4 {
+        letter-spacing: 0.2px;
+        color: $secondary-base;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 125%;
+      }
+
+      & p {
+        color: $secondary-400;
+        letter-spacing: 0.2px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+
+    &__others {
+      background: #ffffff;
+      border-radius: 16px 16px 0px 0px;
+      padding: 32px 24px 40px;
+      // width: 114%;
+      width: 106%;
+      margin-left: -25px;
+
+      @include responsive(smartphone-landscape) {
+        width: 107%;
+      }
+
+      @include responsive(smartphone-portrait) {
+        width: 114%;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 0;
+
+      &-des {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        flex: 0 0 75%;
+
+        & img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &-action {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__button {
+      margin-top: 15vh;
+
+      & .app-secondary-btn {
+        background: #ffffff;
+        border: 1px solid #ff7171;
+        border-radius: 10px;
+        color: #ff7171;
+      }
+    }
+  }
+
+  &--edit {
+    position: relative;
+
+    &__image {
+      border-radius: 16px;
+      height: 214px;
+      position: relative;
+    }
+    &__change {
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(26, 32, 44, 0) 0%, #1a202c 100%);
+      width: 100%;
+      transition: 0.5s ease;
+      opacity: 1;
+      font-size: 20px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 0px 0px 16px 16px;
+
+      & img {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+    &__button {
+      margin-top: 15px;
+    }
+  }
+
+  &--update {
+    & h4 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 125%;
+      letter-spacing: 0.2px;
+      color: $secondary-base;
+    }
+    &__button {
+      position: fixed;
+      left: 20px;
+      min-width: 90%;
+      bottom: 30px;
+    }
+  }
+
+  &--notification {
+    & h4 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 125%;
+      letter-spacing: 0.2px;
+      color: $secondary-base;
+    }
+    &__button {
+      position: fixed;
+      left: 20px;
+      min-width: 90%;
+      bottom: 30px;
+    }
+    &__container {
+      margin-top: 35px;
+    }
+    &__column {
+      background: $primary-white;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      column-gap: 15px;
+      margin: 15px 0;
+      justify-content: space-between;
+    }
+    &__alerts {
+      flex: 0 0 75%;
+
+      & h4 {
+        color: $secondary-base;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.2px;
+        margin-bottom: 5px;
+      }
+      & p {
+        color: $secondary-400;
+        letter-spacing: 0.2px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  &--payment {
+    margin-top: -20px;
+    padding-bottom: 120px;
+
+    &__empty {
+      position: relative;
+
+      &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          width: 200px;
+        }
+
+        & h4 {
+          margin-top: 20px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          text-align: center;
+          letter-spacing: 0.3px;
+          color: $secondary-base;
+        }
+
+        & p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          text-align: center;
+          letter-spacing: 0.3px;
+          color: $secondary-400;
+          margin-top: 10px;
+        }
+      }
+
+      &-button {
+        position: fixed;
+        left: 20px;
+        width: 90%;
+        bottom: 40px;
+      }
+    }
+
+    &__container {
+      display: flex;
+      padding: 10px;
+      background: $primary-white;
+      border-radius: 12px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px;
+    }
+
+    &__card {
+      display: flex;
+      column-gap: 15px;
+      align-items: center;
+
+      &-image {
+        width: 115px;
+      }
+
+      &-details {
+        & p {
+          color: $secondary-400;
+          letter-spacing: 0.3px;
+          line-height: 150%;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__action {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+}

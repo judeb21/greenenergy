@@ -1,0 +1,100 @@
+.layout {
+
+  &--container {
+    @include responsive(tablet-portrait) {
+      min-height: 100vh;
+      height: auto !important;
+      background: $background1;
+    }
+
+    & .app--header__notification {
+      position: absolute;
+      height: 41px;
+      width: 41px;
+      top: 39px;
+      right: 35px;
+    }
+
+    & .app--header__notif {
+      padding: 9px 0 9px 0;
+    }
+  }
+
+  &--header {
+    position: relative;
+    padding: 30px 0 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid $secondary-200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 15px;
+    }
+  }
+
+  &--content {
+    padding: 10px 25px;
+
+    &__header {
+      color: $secondary-base;
+      letter-spacing: 0.2px;
+      line-height: 125%;
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__subheader {
+      color: $secondary-400;
+      line-height: 150%;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+
+    &__account {
+      margin-top: 20px;
+      line-height: 150%;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+
+      &-create {
+        color: $primary-blue;
+      }
+
+      &-terms {
+        color: $secondary-base;
+      }
+    }
+  }
+
+  &--form {
+    &__passforgot {
+      line-height: 150%;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+      margin-bottom: 30px;
+    }
+
+    &__passreset {
+      color: $primary-blue;
+    }
+  }
+}
+
+.confirm--pasword {
+  margin-top: 40px;
+}

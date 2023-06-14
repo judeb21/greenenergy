@@ -1,0 +1,78 @@
+.login {
+
+  &--container {
+    @include responsive(tablet-portrait) {
+      min-height: 100vh;
+      height: 100%;
+      background: $background1;
+    }
+  }
+
+  &--header {
+    position: relative;
+    padding: 40px 0 100px;
+  }
+
+  &--content {
+    padding: 10px 25px;
+
+    &__header {
+      color: $secondary-base;
+      letter-spacing: 0.2px;
+      line-height: 125%;
+      font-weight: 700;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    &__subheader {
+      color: $secondary-400;
+      line-height: 150%;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+
+    &__account {
+      margin-top: 20px;
+      line-height: 150%;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+
+      &-create {
+        color: $primary-blue;
+      }
+
+      &-terms {
+        color: $secondary-base;
+      }
+    }
+  }
+
+  &--form {
+    &__passforgot {
+      line-height: 150%;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      color: $secondary-400;
+      margin-bottom: 30px;
+    }
+
+    &__passreset {
+      color: $primary-blue;
+    }
+  }
+
+  &--footer {
+    position: absolute;
+    bottom: -10px;
+    pointer-events: none;
+  }
+}
+
+.confirm--pasword {
+  margin-top: 40px;
+}

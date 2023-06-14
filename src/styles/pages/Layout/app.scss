@@ -1,0 +1,52 @@
+.app {
+  &--body {
+    height: 100%;
+    width: 100%;
+    background: $secondary-100;
+  }
+
+  &--content {
+    background: #ffffff;
+    border-radius: 16px 16px 0px 0px;
+    padding: 30px 24px;
+    height: 100%;
+  }
+}
+
+.mobile {
+  &--nav {
+    position: fixed;
+    bottom: 20px;
+    background: $secondary-base;
+    border-radius: 16px;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    left: 20px;
+    padding: 18px;
+
+    &__add {
+      background: #436cff;
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      text-align: center;
+
+      & img {
+        height: 55px;
+        width: 32px;
+      }
+    }
+
+    &__avatar {
+      height: 50px;
+      width: 40px;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.app {
+  &--header {
+    position: relative;
+    background: $secondary-100;
+    padding: 40px 24px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    & .logo {
+      left: 25px;
+      height: 30px;
+      width: 30px;
+      top: 50px;
+    }
+
+    &__notif {
+      height: 45px;
+      width: 45px;
+      background: $greyscale-300;
+      border-radius: 16px;
+      padding: 9px 0 9px 6px;
+      position: relative;
+
+      & img {
+        height: 27px;
+        width: 30px;
+      }
+
+      &-count {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+
+        & img {
+          height: 14px;
+          width: 14px;
+        }
+      }
+    }
+  }
+}
